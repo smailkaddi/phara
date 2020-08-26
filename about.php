@@ -1,27 +1,14 @@
-
-<?php
-session_start();
-
-$hostname = "localhost";
-$username = "root";
-$password = "";
-$dbname = "zentao";
-
-$conn = mysqli_connect($hostname, $username, $password, $dbname);
-
-
-
-?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>pharmacie</title>
+    <title> Charity | Teamplate</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
 	<!-- CSS here -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -95,7 +82,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.php"><img class="pdglogo" src="assets/img/logo/PDG LOGO.png" alt=""></a>
+                                    <a href="index.html"><img class="pdglogo" src="assets/img/logo/PDG LOGO.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -104,7 +91,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="index.php">Acceuil</a></li>
+                                                <li><a href="home.html">Acceuil</a></li>
                                                 <li><a href="#">Services</a>
                                                     <ul class="submenu">
                                                         <li><a href="#">Nuit</a></li>
@@ -120,7 +107,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                                     </div>
                                     <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-20">
-                                        <a href="connexion.php" class="btn header-btn">Connexion</a>
+                                        <a href="#" class="btn header-btn">Connexion</a>
                                     </div>
                                 </div>
                             </div> 
@@ -137,45 +124,73 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
     </header>
     <!-- header end -->
     <main>
-    <!-- slider Area Start-->
-    <div class="slider-area">
-        <div class="slider-active">
-            <!-- Single Slider -->
-            <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
-                            <div class="hero__caption">
-                                <h1 data-animation="fadeInUp" data-delay=".6s">Pharmacies de gardes</h1>
-                                <P data-animation="fadeInUp" data-delay=".8s" >Onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut bore et dolore magnt, sed do eiusmod.</P>
-                                <!-- Hero-btn -->
-                                <div class="hero__btn">
-                                    <a href="connexion.html" class="btn hero-btn mb-10"  data-animation="fadeInLeft" data-delay=".8s">Connexion</a>
-                                    <a href="contact.html" class="cal-btn ml-15" data-animation="fadeInRight" data-delay="1.0s">
-                                        <i class="flaticon-null"></i>
-                                        <p>Contactez-Nous</p>
-                                    </a>
-                                </div>
-                            </div>
+    <!--? Hero Start -->
+    <div class="slider-area2">
+        <div class="slider-height2 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap hero-cap2 pt-20 text-center">
+                            <h2>About US</h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Single Slider -->
-            <div class="single-slider slider-height d-flex align-items-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
-                            <div class="hero__caption">
-                                <h1 data-animation="fadeInUp" data-delay=".6s">Our Helping to<br> the world.</h1>
-                                <P data-animation="fadeInUp" data-delay=".8s" >Onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut bore et dolore magnt, sed do eiusmod.</P>
-                                <!-- Hero-btn -->
-                                <div class="hero__btn">
-                                    <a href="industries.html" class="btn hero-btn mb-10"  data-animation="fadeInLeft" data-delay=".8s">Donate</a>
-                                    <a href="industries.html" class="cal-btn ml-15" data-animation="fadeInRight" data-delay="1.0s">
-                                        <i class="flaticon-null"></i>
-                                        <p>+12 1325 41</p>
-                                    </a>
+        </div>
+    </div>
+    <!-- Hero End -->
+    <!--? Testimonial Start -->
+    <div class="testimonial-area testimonial-padding">
+        <div class="container">
+            <!-- Testimonial contents -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-xl-8 col-lg-8 col-md-10">
+                    <div class="h1-testimonial-active dot-style">
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial.png" alt="">
+                                        <span>Margaret Lawson</span>
+                                        <p>Creative Director</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial.png" alt="">
+                                        <span>Margaret Lawson</span>
+                                        <p>Creative Director</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <!-- founder -->
+                                <div class="testimonial-founder">
+                                    <div class="founder-img mb-40">
+                                        <img src="assets/img/gallery/testimonial.png" alt="">
+                                        <span>Margaret Lawson</span>
+                                        <p>Creative Director</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-top-cap">
+                                    <p>“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. Eat clean it will care for you and workout hard.”</p>
                                 </div>
                             </div>
                         </div>
@@ -184,87 +199,8 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
             </div>
         </div>
     </div>
-    <!-- slider Area End-->
-    <!--? Services Area Start -->
-    <div class="service-area section-padding30">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
-                    <!-- Section Tittle -->
-                    <div class="section-tittle text-center mb-80">
-                        <h2>Services</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-cat text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-null-1"></span>
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.php">Jours</a></h5>
-                            <p>Les pharmacies de garde qu'elles sont en garde jours</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-cat active text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-think"></span>
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.php">Weekend</a></h5>
-                            <p>Les pharmacies de garde qu'elles sont en garde Nuit</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="single-cat text-center mb-50">
-                        <div class="cat-icon">
-                            <span class="flaticon-gear"></span>
-                        </div>
-                        <div class="cat-cap">
-                            <h5><a href="services.php">Nuit</a></h5>
-                            <p>Les pharmacies de garde qu'elles sont en garde Weekend</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Services Area End -->
-    <!--? About Law Start-->
-    <section class="about-low-area section-padding2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-10">
-                    <div class="about-caption mb-50">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle mb-35">
-                            <span>About our foundetion</span>
-                            <h2>We Are In A Mission To  Help Helpless</h2>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,mod tempor incididunt ut labore et dolore magna aliqua. Utnixm, quis nostrud exercitation ullamc.</p>
-                        <p>Lorem ipvsum dolor sit amext, consectetur adipisicing elit, smod tempor incididunt ut labore et dolore.</p>
-                    </div>
-                    <a href="about.html" class="btn">About US</a>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <!-- about-img -->
-                    <div class="about-img ">
-                        <div class="about-font-img d-none d-lg-block">
-                            <img src="assets/img/gallery/about2.png" alt="">
-                        </div>
-                        <div class="about-back-img ">
-                            <img src="assets/img/gallery/about1.png" alt="" style="width: 95%;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Law End-->
+    <!-- Testimonial End -->
+
     <!--? Count Down Start -->
     <div class="count-down-area pt-25 section-bg" data-background="assets/img/gallery/section_bg02.png">
         <div class="container">
@@ -275,9 +211,9 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                             <div class="col-lg-3 col-md-6 col-sm-6">
                                 <!-- Counter Up -->
                                 <div class="single-counter text-center">
-                                    <span class="counter color-green">1</span>
+                                    <span class="counter color-green">6,200</span>
                                     <span class="plus">+</span>
-                                    <p class="color-green">Pais</p>
+                                    <p class="color-green">Donation</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -285,7 +221,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                                 <div class="single-counter text-center">
                                     <span class="counter color-green">80</span>
                                     <span class="plus">+</span>
-                                    <p class="color-green">Viles</p>
+                                    <p class="color-green">Fund Raised</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -293,7 +229,15 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                                 <div class="single-counter text-center">
                                     <span class="counter color-green">256</span>
                                     <span class="plus">+</span>
-                                    <p class="color-green">Pharmacies</p>
+                                    <p class="color-green">Donation</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">256</span>
+                                    <span class="plus">+</span>
+                                    <p class="color-green">Donation</p>
                                 </div>
                             </div>
                         </div>
@@ -315,7 +259,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                             <div class="single-footer-caption mb-30">
                                 <div class="footer-tittle">
                                     <div class="footer-logo mb-20">
-                                        <a href="index.php"><img class="pdglogofooter" src="assets/img/logo/PDG LOGO FOOTER.png" alt=""></a>
+                                        <a href="index.html"><img class="pdglogofooter" src="assets/img/logo/PDG LOGO FOOTER.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>

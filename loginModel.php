@@ -23,6 +23,7 @@
 
      $query = "SELECT * FROM user WHERE email='$email' && password='$password'";
      $user = $conn->query($query);
+     $results = mysqli_query($conn, $query);
 
 
     // Check at least there's one row AKA user exists
@@ -42,11 +43,24 @@
                 $_SESSION['lastname'] = $row['lastname'];
                 $_SESSION['password'] = $row['password'];
                 $_SESSION['user_id'] = $row['user_id'];
+            }
+          
+             
+    
+		if (mysqli_num_rows($results) == 1) { // user found
+			// check if user is admin or user
+			$logged_in_user = mysqli_fetch_assoc($results);
+			if ($logged_in_user['type'] == 'admin') {
 
-                //echo $_SESSION['email'];
+				$_SESSION['user'] = $logged_in_user;
+				$_SESSION['success']  = "You are now logged in";
+                header("Location: admin/ville.php");	  
+			}else{
+				$_SESSION['user'] = $logged_in_user;
+				$_SESSION['success']  = "You are now logged in";
 
-                // Redirect to posts page
-                header("Location: ville.php");
+				header('location: home.php');
+			}
 
 
             }

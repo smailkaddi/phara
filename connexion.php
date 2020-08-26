@@ -1,4 +1,7 @@
 <?php include('function.php') ?>
+
+
+
 <!doctype html>
 
 <html class="no-js" lang="zxx">
@@ -6,7 +9,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>pharmacie</title>
+    <title>PDG</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
@@ -92,7 +95,7 @@
                                 <div class="main-menu d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="home.html">Acceuil</a></li>
+                                            <li><a href="index.php">Acceuil</a></li>
                                             <li><a href="#">Services</a>
                                                 <ul class="submenu">
                                                     <li><a href="#">Nuit</a></li>
@@ -101,8 +104,8 @@
 
                                                 </ul>
                                             </li>
-                                            <li><a href="about.html">À propos de nous</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="about.php">À propos de nous</a></li>
+                                            <li><a href="contact.php">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -140,26 +143,17 @@
             <!-- Form Box -->
             <div class="col-sm-6 form">
                 <!-- Signup Form -->
-                <form action="loginController.php" method="POST">
-				<h1>Create Account</h1>
-				<div class="name">
-					<div style="padding:0 5px 0 0">
-						<input type="text" name="firstname" placeholder="FirstName" required=""/>
-					</div>
-					<div>
-						<input type="text" name="lastname" placeholder="LastName" required=""/>
-					</div>
-				</div>
-				<input type="text" name="username" placeholder="Username" required=""/>
-				<input type="email" name="email" placeholder="Email"required="" />
-				<input type="password" name="password" placeholder="Password"required="" />
-				<input type="password" name="cpassword" placeholder="Confirme your Password"required="" />
-				<input type="text" name="image" placeholder="Enter Image Link" required=""/>
-				<button  class = "butn" type="submit" name="register">Sign Up</button>
-                <button class = "butn"><a href="connexion.php"> Sign IN </a>  </button>
+                 <form action="loginModel.php" method="POST">
+				<h1>Sign in</h1>
+				<input type="email" name="email" placeholder="Email" />
+				<input type="password" name="password" placeholder="Password" />
+				<a href="#">Forgot your password?</a>
+				<button  type="submit" name="login_btn">Sign In</button>
+                <button  ><a href="register.php"> Sign up </a>  </button>
+			</form> 
+              
 
-                
-			</form>
+		
                 </div><!-- End Signup Form -->
             </div>
         </div>
@@ -208,7 +202,7 @@
                                     <li><a href="#"> Services</a></li>
                                     <li><a href="#">Contactez-Nous</a></li>
                                     <li><a href="#">À prpos de nous</a></li>
-                                    <li><a href="#">Connexion</a></li>
+                                    <li><a href="connexion.php">Connexion</a></li>
                                 </ul>
                             </div>
                         </div>

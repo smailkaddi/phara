@@ -27,10 +27,10 @@
 			 $cpassword = md5($_POST['cpassword']);
 
 			 if($password == $cpassword){
-			   $sql = "INSERT INTO user  VALUES(NULL,'$username', '$password', '$email', '$firstname', '$lastname','$cpassword', ' $image')";
+			   $sql = "INSERT INTO user (firstname,lastname,username,email,password,cpassword,image )  VALUES('$firstname', '$lastname', '$username', '$email', '$password','$cpassword', ' $image')";
 
                mysqli_query($conn, $sql);
-               header("Location: login.php");
+               header("Location: connexion.php");
 
 			 } else{
                echo "The two password do not match";
@@ -41,7 +41,7 @@
 		   }
 
 	   }
-
+    
 
 ?>
 

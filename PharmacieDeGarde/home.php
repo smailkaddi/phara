@@ -1,23 +1,9 @@
-
-<?php
-session_start();
-
-$hostname = "localhost";
-$username = "root";
-$password = "";
-$dbname = "zentao";
-
-$conn = mysqli_connect($hostname, $username, $password, $dbname);
-
-
-
-?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>pharmacie</title>
+    <title>PDG</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -95,7 +81,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="index.php"><img class="pdglogo" src="assets/img/logo/PDG LOGO.png" alt=""></a>
+                                    <a href="index.html"><img class="pdglogo" src="assets/img/logo/PDG LOGO.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -104,7 +90,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="index.php">Acceuil</a></li>
+                                                <li><a href="home.php">Acceuil</a></li>
                                                 <li><a href="#">Services</a>
                                                     <ul class="submenu">
                                                         <li><a href="#">Nuit</a></li>
@@ -120,7 +106,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                                     </div>
                                     <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-20">
-                                        <a href="connexion.php" class="btn header-btn">Connexion</a>
+                                        <a href="login.php" class="btn header-btn">Connexion</a>
                                     </div>
                                 </div>
                             </div> 
@@ -203,7 +189,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                             <span class="flaticon-null-1"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.php">Jours</a></h5>
+                            <h5><a href="services.html">Jours</a></h5>
                             <p>Les pharmacies de garde qu'elles sont en garde jours</p>
                         </div>
                     </div>
@@ -214,7 +200,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                             <span class="flaticon-think"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.php">Weekend</a></h5>
+                            <h5><a href="services.html">Weekend</a></h5>
                             <p>Les pharmacies de garde qu'elles sont en garde Nuit</p>
                         </div>
                     </div>
@@ -225,7 +211,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                             <span class="flaticon-gear"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.php">Nuit</a></h5>
+                            <h5><a href="services.html">Nuit</a></h5>
                             <p>Les pharmacies de garde qu'elles sont en garde Weekend</p>
                         </div>
                     </div>
@@ -315,7 +301,7 @@ $conn = mysqli_connect($hostname, $username, $password, $dbname);
                             <div class="single-footer-caption mb-30">
                                 <div class="footer-tittle">
                                     <div class="footer-logo mb-20">
-                                        <a href="index.php"><img class="pdglogofooter" src="assets/img/logo/PDG LOGO FOOTER.png" alt=""></a>
+                                        <a href="index.html"><img class="pdglogofooter" src="assets/img/logo/PDG LOGO FOOTER.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
